@@ -24,6 +24,10 @@ services:
         local_dev_net:
             aliases:
                 - web-shop-db-image
+  demo-image:
+    build: /demo
+    ports:  
+      - "8070:8080"
 
 networks:
   local_dev_net:
